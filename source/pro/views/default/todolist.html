@@ -1,0 +1,52 @@
+{{extend 'layout.html'}}
+<html>
+<head>
+	<title>ToDoList</title>
+    <script type="text/javascript">
+        function delitem(n)
+        {
+            var http=new XMLHttpRequest();
+            http.open("GET","/NoteKeeper/default/removelist?n="+n,true);
+            http.send();
+            runajax();
+        }
+        function save(n)
+        {
+            var inp=document.getElementById(n);
+            var para=document.getElementById("p"+n);
+            if(inp.checked==true)
+                para.style.textDecoration="line-through";
+            else
+                para.style.textDecoration="none";
+            var http=new XMLHttpRequest();
+            http.open("GET","/NoteKeeper/default/updatelist?n="+n+"&checked="+inp.checked,true);
+            http.send();
+        }
+        function runajax()
+        {
+            var http=new XMLHttpRequest();
+            http.onreadystatechange=function()
+            {
+                if(http.readyState==4)
+                {
+                    document.getElementById("tasks").innerHTML=http.responseText;
+                }
+            }
+            http.open("GET","{{=URL('todolistprint')}}",true);
+            http.send();
+        }
+        window.addEventListener("load",runajax);
+        window.addEventListener("load",save);
+    </script>
+</head>
+<body>
+	<h2>Simple ToDoList</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="text" name="content"/>
+        <input type="submit" name="sub" value="Add to List" />
+    </form>
+    <br><br>
+    <h4>Tasks:</h4>
+    <p id="tasks"></p>
+</body>
+</html>

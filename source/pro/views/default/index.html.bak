@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+<br><br>
+<h2 style="text-align:center;">NoteKeeper</h2>
+<br>
+<p style="font-size:150%">
+    Using this application you can maintain your notes on the fly and access them from anywhere online.<br>
+    It has many new attractive features like note colouring, reminders and alerts, e-mail notifications and recently added draw-on-the-note feature to take your note taking experience to new heights.
+    <br><br>To learn more, click the following link. <a href="#">Learn More!</a>
+<br><br>
+    To LOGIN or REGISTER , click the following link . <a href="{{=URL('dispnotes.html')}}">SIGN IN</a>
+</p>

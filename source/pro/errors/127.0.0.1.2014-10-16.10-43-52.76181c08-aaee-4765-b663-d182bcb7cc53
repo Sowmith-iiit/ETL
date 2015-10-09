@@ -1,0 +1,832 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'pro' is not defined"
+p3
+sS'layer'
+p4
+S'/home/sowmith/Downloads/softwares/web2py/applications/pro/views/default/index.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!doctype html>\\n<html lang="en">\\n<head>\\n  <meta charset="UTF-8">\\n  <title>Etl</title>\\n  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>\\n  \\n  <link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/bootstrap.min.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\n        <link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/own.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\n        <!-- font Awesome -->\\n        <link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/font-awesome.min.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\n        <!-- Ionicons -->\\n        <link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/ionicons.min.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />        \\n        <!-- Theme style -->\\n        <link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/AdminLTE.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\n\\n\\t<link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/ngDialog.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\n\\t\\n\\t<link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/style.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\n\\n\\t<link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/bootstrap3-wysihtml5.min.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css">\\n    <style>\\n\\t#pas {\\n\\t\\twidth:1000px;\\n\\t\\theight:250px;\\n\\t\\tpadding:10px;\\n\\t\\tborder:1px solid #aaaaaa;\\n\\t}\\n\\t#di2 {\\n\\t\\twidth:1000px;\\n\\t\\theight:250px;\\n\\t\\tpadding:10px;\\n\\t\\tborder:1px solid #aaaaaa;\\n\\t}\\n   </style>\\n</head>\\n<body class="skin-blue" ng-app="ngAppDemo">\\n  <header class="header">\\n            <a href="index.html" class="logo" ng-controller="project as pro">\\n                <!-- Add the class icon to your logo image or logo icon to add the margining -->\\n             ETL \', escape=False)\npro.test\nresponse.write(\' \\n            </a>\\n            <nav class="navbar navbar-static-top" role="navigation">\\n                <!-- Sidebar toggle button-->\\n                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">\\n                    <span class="sr-only">Toggle navigation</span>\\n                    <span class="icon-bar"></span>\\n                    <span class="icon-bar"></span>\\n                    <span class="icon-bar"></span>\\n                </a>\\n                <div class="navbar-right">\\n                    <ul class="nav navbar-nav">\\n                        <!-- Messages: style can be found in dropdown.less-->\\n                        <!-- User Account: style can be found in dropdown.less -->\\n                        <li class="dropdown user user-menu">\\n                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\\n                                <i class="glyphicon glyphicon-user"></i>\\n                                <span>Jane Doe <i class="caret"></i></span>\\n                            </a>\\n                            <ul class="dropdown-menu">\\n                                <!-- User image -->\\n                                <li class="user-header bg-light-blue">\\n                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />\\n                                    <p>\\n                                        Jane Doe - Web Developer\\n                                        <small>Member since Nov. 2012</small>\\n                                    </p>\\n                                </li>\\n                                <!-- Menu Body -->\\n                                <li class="user-body">\\n                                    <div class="col-xs-4 text-center">\\n                                        <a href="#">Followers</a>\\n                                    </div>\\n                                    <div class="col-xs-4 text-center">\\n                                        <a href="#">Sales</a>\\n                                    </div>\\n                                    <div class="col-xs-4 text-center">\\n                                        <a href="#">Friends</a>\\n                                    </div>\\n                                </li>\\n                                <!-- Menu Footer-->\\n                                <li class="user-footer">\\n                                    <div class="pull-left">\\n                                        <a href="#" class="btn btn-default btn-flat">Profile</a>\\n                                    </div>\\n                                    <div class="pull-right">\\n                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>\\n                                    </div>\\n                                </li>\\n                            </ul>\\n                        </li>\\n                    </ul>\\n                </div>\\n            </nav>\\n  </header>\\n  <div class="wrapper row-offcanvas row-offcanvas-left" ng-app="ngAppContent">\\n  \\t<aside class="left-side sidebar-offcanvas">\\n                <!-- sidebar: style can be found in sidebar.less -->\\n                <section class="sidebar">\\n                    <!-- Sidebar user panel -->\\n                    <div class="user-panel">\\n                        <div class="pull-left image">\\n                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />\\n                        </div>\\n                        <div class="pull-left info">\\n                            <p>Hello, Jane</p>\\n\\n                            \\n                        </div>\\n                    </div>\\n                    <!-- sidebar menu: : style can be found in sidebar.less -->\\n                    <ul class="sidebar-menu">\\n            \\n           \\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-laptop"></i>\\n                                <span>Input</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li draggable="true" ondragstart="drag(event,1)" onclick="change(1)"><a href="#"><i class="fa fa-angle-double-right"></i>CSV File Input</a></li>\\n                                <li draggable="true" ondragstart="drag(event,2)"onclick="change(2)"><a href="#"><i class="fa fa-angle-double-right"></i> Google Analytics</a></li>\\n                                <li draggable="true" ondragstart="drag(event,3)"onclick="change(3)"><a href="#"><i class="fa fa-angle-double-right" ></i> Generate Rows </a></li>\\n                                <li draggable="true" ondragstart="drag(event,4)"onclick="change(4)"><a href="#"><i class="fa fa-angle-double-right"></i> Table input </a></li>\\n                                <li draggable="true" ondragstart="drag(event,5)"onclick="change(5)"><a href="#"><i class="fa fa-angle-double-right" ></i> Timeline</a></li>\\n                            </ul>  \\n\\n                        \\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-edit"></i> <span>Output</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General Elements</a></li>\\n                                <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li>\\n                                <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>\\n                            </ul>\\n                        </li>\\n                        \\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-table"></i> <span>Transform</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>\\n                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data tables</a></li>\\n                            </ul>\\n                        </li>\\n\\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-folder"></i> <span>Examples</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li><a href="pages/examples/invoice.html"><i class="fa fa-angle-double-right"></i> Invoice</a></li>\\n                                <li><a href="pages/examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a></li>\\n                                <li><a href="pages/examples/register.html"><i class="fa fa-angle-double-right"></i> Register</a></li>\\n                                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-angle-double-right"></i> Lockscreen</a></li>\\n                                <li><a href="pages/examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a></li>\\n                                <li><a href="pages/examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a></li>\\n                                <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>\\n                            </ul>\\n                        </li>\\n\\n                    </ul>\\n                </section>\\n                <!-- /.sidebar -->\\n    </aside>\\n    <!-- Right side column. Contains the navbar and content of the page -->\\n    <aside class="right-side">\\n<section class="content-header">\\n                </section>\\n\\n                <!-- Main content -->\\n                <section class="content">\\n                 <!--pre id="pas" ondrop="drop(event) ondragover="allowdrop(event)"></pre-->\\n                 <div id="pas" ondrop="dropcopy(event)" ondragover="allowDrop(event)">\\n          <!-- /.content -->\\n              </div>\\n            </section>\\n<!-- Modal -->\\n<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\\n  <div class="modal-dialog">\\n    <div class="modal-content">\\n      <div class="modal-header">\\n        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>\\n        <h4 class="modal-title" id="myModalLabel">Modal title</h4>\\n      </div>\\n      <div class="modal-body">\\n        <form>\\n        <table>\\n                <tr><td>StepName:</td> <td><input type="text" class="form-control"></td></tr>\\n                <tr><td> FileName:</td><td><input type="text" class="form-control" required> <input type="file" > </td></tr>\\n                <tr><td>Delimiter:</td><td> <input type="text" placeholder="," class="form-control" required></td></tr> \\n                <tr><td>Enclosure:</td><td><input type="text" placeholder=\\\'"\\\' required></td></tr>\\n                <tr><td>NIO Buffer_size </td><td><input type="text" placeholder="5000" required></td></tr>\\n                <tr><td>lazy conversion </td><td><input type="checkbox" required></td></tr>\\n                <tr><td>Header_row present </td><td><input type="checkbox"></td></tr>\\n                <tr><td>Add filename to result </td><td><input type="checkbox"></td></tr>\\n                <tr><td>row number(optional) </td><td><input type="text"></td></tr>\\n                <tr><td>Running in parallel ? </td><td><input type="checkbox"></td></tr>\\n                <tr><td>New line possible </td><td><input type="checkbox"></td></tr>\\n                <tr><td>File Encoding </td><td><input type="text"></td></tr>\\n        </table>\\n        </forn>\\n      <div class="modal-footer">\\n        <button type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>\\n      </div>\\n    </div>\\n  </div>\\n</div>\\n</aside>\\n  </div>\\n</body>\\n<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">\\n        \\n\\t<script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>\\n\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/csv_input.json\'))\nresponse.write(\'" type="text/javascript"></script>\\n\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/AdminLTE/app.js\'))\nresponse.write(\'" type="text/javascript"></script>\\n\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/clickandput.js\'))\nresponse.write(\'"></script>\\n\\n\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/plugins/bootstrap3-wysihtml5.all.min.js\'))\nresponse.write(\'"> </script>\\n\\t\\n\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/ngDialog.js\'))\nresponse.write(\'"> </script>\\n\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/bootstrap.min.js\'))\nresponse.write(\'"></script>\\n\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/shift.js\'))\nresponse.write(\'" type="text/javascript"></script>\\n\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p23
+sS'args'
+p24
+S'("name \'pro\' is not defined",)'
+p25
+sS'__reduce__'
+p26
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p27
+sS'__str__'
+p28
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p29
+sS'__format__'
+p30
+S'<built-in method __format__ of exceptions.NameError object>'
+p31
+sS'__getattribute__'
+p32
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.NameError'>"
+p35
+sS'__unicode__'
+p36
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p37
+sS'__delattr__'
+p38
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p39
+sS'__subclasshook__'
+p40
+S'<built-in method __subclasshook__ of type object>'
+p41
+sS'__repr__'
+p42
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p47
+sS'__doc__'
+p48
+S"'Name not found globally.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"name 'pro' is not defined"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\x9cU\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_pro</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-903ef584-eb11-41f4-8c0d-7f94d88be0ef<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-541d5402-1ebe-43ff-aa8e-a2583c6594d0<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-541d5402-1ebe-43ff-aa8e-a2583c6594d0; session_id_pro=127.0.0.1-903ef584-eb11-41f4-8c0d-7f94d88be0ef</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (X11; Linux x86_64; rv:32.0) Gecko/20100101 Firefox/32.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>38484</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>developer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/sowmith/Downloads/softwares/web2py/applications/welcome/&#x27;, &#x27;/home/sowmith/Downloads/softwares/web2py/applications/pro/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x20b94d0: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;10.1.39.173&#x27;, &#x27;fe80::3e77:e6ff:fe64:791d%wlo1&#x27;, &#x27;fe80::a248:1cff:fe17:5e34%em1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;developer&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/home/sowmith/Downloads/softwares/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-541d5402-1ebe-43ff-aa8e-a2583c6594d0; session_id_pro=127.0.0.1-903ef584-eb11-41f4-8c0d-7f94d88be0ef</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (X11; Linux x86_64; rv:32.0) Gecko/20100101 Firefox/32.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>fe80::3e77:e6ff:fe64:791d%wlo1</div></td></tr><tr><td><div>10.1.39.173</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>fe80::a248:1cff:fe17:5e34%em1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>developer</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>38484</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>developer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.9.11-stable+timestamp.2014.09.15.23.35.11</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7fad996721e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x1440668&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x7fad7c698c50&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x7fad996721e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x1440668&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x7fad7c698c50&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py/applications/pro/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/sowmith/Downloads/softwares/web2py/applications/welcome/&#x27;, &#x27;/home/sowmith/Downloads/softwares/web2py/applications/pro/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x20b94d0: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;10.1.39.173&#x27;, &#x27;fe80::3e77:e6ff:fe64:791d%wlo1&#x27;, &#x27;fe80::a248:1cff:fe17:5e34%em1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;developer&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/home/sowmith/Downloads/softwares/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>fe80::3e77:e6ff:fe64:791d%wlo1</div></td></tr><tr><td><div>10.1.39.173</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>fe80::a248:1cff:fe17:5e34%em1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>developer</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.9.11-stable+timestamp.2014.09.15.23.35.11</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2014, 10, 16, 10, 43, 52, 839522)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2014, 10, 16, 5, 13, 52, 839550)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uuid</td><td style="vertical-align:top;">:</td><td><div>pro/127.0.0.1.2014-10-16.10-43-52.76181c08-aaee-4765-b663-d182bcb7cc53</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x7fad7c6b9ed0&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'/home/sowmith/Downloads/softwares/web2py/gluon/restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0x7fad7c6bca30, file "/...plications/pro/views/default/index.html", line 1>'
+p69
+ssS'lnum'
+p70
+I224
+sS'lines'
+p71
+(dp72
+I224
+S'        exec ccode in environment'
+p73
+sI225
+S'    except HTTP:'
+p74
+sI226
+S'        raise'
+p75
+sI227
+S'    except RestrictedError:'
+p76
+sI228
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p77
+sI219
+S'    try:'
+p78
+sI220
+S'        if isinstance(code, types.CodeType):'
+p79
+sI221
+S'            ccode = code'
+p80
+sI222
+S'        else:'
+p81
+sI223
+S'            ccode = compile2(code, layer)'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!doctype html>\\\\n<html lang="en"...avascript"></script>\\\\n\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, \'CAT\': <class \'gluon.html.CAT\'>, ...}, layer=\'/home/sowmith/Downloads/softwares/web2py/applications/pro/views/default/index.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'/home/sowmith/Downloads/softwares/web2py/applications/pro/views/default/index.html'
+p88
+sg64
+(dp89
+S'href'
+p90
+S'undefined'
+p91
+sS'link'
+p92
+g91
+sS'builtintype'
+p93
+S"<type 'type'>"
+p94
+sS'rel'
+p95
+g91
+ssg70
+I18
+sg71
+(dp96
+I9
+S'response.write(\'" rel="stylesheet" type="text/css" />        \\n        <!-- Theme style -->\\n        <link href="\', escape=False)'
+p97
+sI10
+S"response.write(URL('static','css/AdminLTE.css'))"
+p98
+sI11
+S'response.write(\'" rel="stylesheet" type="text/css" />\\n\\n\\t<link href="\', escape=False)'
+p99
+sI12
+S"response.write(URL('static','css/ngDialog.css'))"
+p100
+sI13
+S'response.write(\'" rel="stylesheet" type="text/css" />\\n\\t\\n\\t<link href="\', escape=False)'
+p101
+sI14
+S"response.write(URL('static','css/style.css'))"
+p102
+sI15
+S'response.write(\'" rel="stylesheet" type="text/css" />\\n\\n\\t<link href="\', escape=False)'
+p103
+sI16
+S"response.write(URL('static','css/bootstrap3-wysihtml5.min.css'))"
+p104
+sI17
+S'response.write(\'" rel="stylesheet" type="text/css">\\n    <style>\\n\\t#pas {\\n\\t\\twidth:1000px;\\n\\t\\theight:250px;\\n\\t\\tpadding:10px;\\n\\t\\tborder:1px solid #aaaaaa;\\n\\t}\\n\\t#di2 {\\n\\t\\twidth:1000px;\\n\\t\\theight:250px;\\n\\t\\tpadding:10px;\\n\\t\\tborder:1px solid #aaaaaa;\\n\\t}\\n   </style>\\n</head>\\n<body class="skin-blue" ng-app="ngAppDemo">\\n  <header class="header">\\n            <a href="index.html" class="logo" ng-controller="project as pro">\\n                <!-- Add the class icon to your logo image or logo icon to add the margining -->\\n             ETL \', escape=False)'
+p105
+sI18
+S'pro.test'
+p106
+sI19
+S'response.write(\' \\n            </a>\\n            <nav class="navbar navbar-static-top" role="navigation">\\n                <!-- Sidebar toggle button-->\\n                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">\\n                    <span class="sr-only">Toggle navigation</span>\\n                    <span class="icon-bar"></span>\\n                    <span class="icon-bar"></span>\\n                    <span class="icon-bar"></span>\\n                </a>\\n                <div class="navbar-right">\\n                    <ul class="nav navbar-nav">\\n                        <!-- Messages: style can be found in dropdown.less-->\\n                        <!-- User Account: style can be found in dropdown.less -->\\n                        <li class="dropdown user user-menu">\\n                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\\n                                <i class="glyphicon glyphicon-user"></i>\\n                                <span>Jane Doe <i class="caret"></i></span>\\n                            </a>\\n                            <ul class="dropdown-menu">\\n                                <!-- User image -->\\n                                <li class="user-header bg-light-blue">\\n                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />\\n                                    <p>\\n                                        Jane Doe - Web Developer\\n                                        <small>Member since Nov. 2012</small>\\n                                    </p>\\n                                </li>\\n                                <!-- Menu Body -->\\n                                <li class="user-body">\\n                                    <div class="col-xs-4 text-center">\\n                                        <a href="#">Followers</a>\\n                                    </div>\\n                                    <div class="col-xs-4 text-center">\\n                                        <a href="#">Sales</a>\\n                                    </div>\\n                                    <div class="col-xs-4 text-center">\\n                                        <a href="#">Friends</a>\\n                                    </div>\\n                                </li>\\n                                <!-- Menu Footer-->\\n                                <li class="user-footer">\\n                                    <div class="pull-left">\\n                                        <a href="#" class="btn btn-default btn-flat">Profile</a>\\n                                    </div>\\n                                    <div class="pull-right">\\n                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>\\n                                    </div>\\n                                </li>\\n                            </ul>\\n                        </li>\\n                    </ul>\\n                </div>\\n            </nav>\\n  </header>\\n  <div class="wrapper row-offcanvas row-offcanvas-left" ng-app="ngAppContent">\\n  \\t<aside class="left-side sidebar-offcanvas">\\n                <!-- sidebar: style can be found in sidebar.less -->\\n                <section class="sidebar">\\n                    <!-- Sidebar user panel -->\\n                    <div class="user-panel">\\n                        <div class="pull-left image">\\n                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />\\n                        </div>\\n                        <div class="pull-left info">\\n                            <p>Hello, Jane</p>\\n\\n                            \\n                        </div>\\n                    </div>\\n                    <!-- sidebar menu: : style can be found in sidebar.less -->\\n                    <ul class="sidebar-menu">\\n            \\n           \\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-laptop"></i>\\n                                <span>Input</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li draggable="true" ondragstart="drag(event,1)" onclick="change(1)"><a href="#"><i class="fa fa-angle-double-right"></i>CSV File Input</a></li>\\n                                <li draggable="true" ondragstart="drag(event,2)"onclick="change(2)"><a href="#"><i class="fa fa-angle-double-right"></i> Google Analytics</a></li>\\n                                <li draggable="true" ondragstart="drag(event,3)"onclick="change(3)"><a href="#"><i class="fa fa-angle-double-right" ></i> Generate Rows </a></li>\\n                                <li draggable="true" ondragstart="drag(event,4)"onclick="change(4)"><a href="#"><i class="fa fa-angle-double-right"></i> Table input </a></li>\\n                                <li draggable="true" ondragstart="drag(event,5)"onclick="change(5)"><a href="#"><i class="fa fa-angle-double-right" ></i> Timeline</a></li>\\n                            </ul>  \\n\\n                        \\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-edit"></i> <span>Output</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General Elements</a></li>\\n                                <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li>\\n                                <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>\\n                            </ul>\\n                        </li>\\n                        \\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-table"></i> <span>Transform</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>\\n                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data tables</a></li>\\n                            </ul>\\n                        </li>\\n\\n                        <li class="treeview">\\n                            <a href="#">\\n                                <i class="fa fa-folder"></i> <span>Examples</span>\\n                                <i class="fa fa-angle-left pull-right"></i>\\n                            </a>\\n                            <ul class="treeview-menu">\\n                                <li><a href="pages/examples/invoice.html"><i class="fa fa-angle-double-right"></i> Invoice</a></li>\\n                                <li><a href="pages/examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a></li>\\n                                <li><a href="pages/examples/register.html"><i class="fa fa-angle-double-right"></i> Register</a></li>\\n                                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-angle-double-right"></i> Lockscreen</a></li>\\n                                <li><a href="pages/examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a></li>\\n                                <li><a href="pages/examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a></li>\\n                                <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>\\n                            </ul>\\n                        </li>\\n\\n                    </ul>\\n                </section>\\n                <!-- /.sidebar -->\\n    </aside>\\n    <!-- Right side column. Contains the navbar and content of the page -->\\n    <aside class="right-side">\\n<section class="content-header">\\n                </section>\\n\\n                <!-- Main content -->\\n                <section class="content">\\n                 <!--pre id="pas" ondrop="drop(event) ondragover="allowdrop(event)"></pre-->\\n                 <div id="pas" ondrop="dropcopy(event)" ondragover="allowDrop(event)">\\n          <!-- /.content -->\\n              </div>\\n            </section>\\n<!-- Modal -->\\n<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\\n  <div class="modal-dialog">\\n    <div class="modal-content">\\n      <div class="modal-header">\\n        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>\\n        <h4 class="modal-title" id="myModalLabel">Modal title</h4>\\n      </div>\\n      <div class="modal-body">\\n        <form>\\n        <table>\\n                <tr><td>StepName:</td> <td><input type="text" class="form-control"></td></tr>\\n                <tr><td> FileName:</td><td><input type="text" class="form-control" required> <input type="file" > </td></tr>\\n                <tr><td>Delimiter:</td><td> <input type="text" placeholder="," class="form-control" required></td></tr> \\n                <tr><td>Enclosure:</td><td><input type="text" placeholder=\\\'"\\\' required></td></tr>\\n                <tr><td>NIO Buffer_size </td><td><input type="text" placeholder="5000" required></td></tr>\\n                <tr><td>lazy conversion </td><td><input type="checkbox" required></td></tr>\\n                <tr><td>Header_row present </td><td><input type="checkbox"></td></tr>\\n                <tr><td>Add filename to result </td><td><input type="checkbox"></td></tr>\\n                <tr><td>row number(optional) </td><td><input type="text"></td></tr>\\n                <tr><td>Running in parallel ? </td><td><input type="checkbox"></td></tr>\\n                <tr><td>New line possible </td><td><input type="checkbox"></td></tr>\\n                <tr><td>File Encoding </td><td><input type="text"></td></tr>\\n        </table>\\n        </forn>\\n      <div class="modal-footer">\\n        <button type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>\\n      </div>\\n    </div>\\n  </div>\\n</div>\\n</aside>\\n  </div>\\n</body>\\n<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">\\n        \\n\\t<script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>\\n\\n        <script src="\', escape=False)'
+p107
+sI20
+S"response.write(URL('static','js/csv_input.json'))"
+p108
+sI21
+S'response.write(\'" type="text/javascript"></script>\\n\\n        <script src="\', escape=False)'
+p109
+sI22
+S"response.write(URL('static','js/AdminLTE/app.js'))"
+p110
+sI23
+S'response.write(\'" type="text/javascript"></script>\\n\\n        <script src="\', escape=False)'
+p111
+sI24
+S"response.write(URL('static','js/clickandput.js'))"
+p112
+sI25
+S'response.write(\'"></script>\\n\\n\\t<script src="\', escape=False)'
+p113
+sI26
+S"response.write(URL('static','js/plugins/bootstrap3-wysihtml5.all.min.js'))"
+p114
+sI27
+S'response.write(\'"> </script>\\n\\t\\n\\t<script src="\', escape=False)'
+p115
+sI28
+S"response.write(URL('static','js/ngDialog.js'))"
+p116
+ssg83
+S'()'
+p117
+sg85
+S'<module>'
+p118
+sasS'pyver'
+p119
+S'Python 2.7.5: /usr/bin/python (prefix: /usr)'
+p120
+sS'session'
+p121
+g57
+(S's\x1a\x00\x00\x00<div><table></table></div>'
+tRp122
+sS'etype'
+p123
+S"<type 'exceptions.NameError'>"
+p124
+sS'date'
+p125
+S'Thu Oct 16 10:43:52 2014'
+p126
+sS'response'
+p127
+g57
+(S's \x1e\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x7fad7c69d340&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_pro</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-810dfef6-17f9-4a92-b5c3-b4d4b209c8b6<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>Welcome to NoteKeeper!</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div>: </div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>table3cols</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="brand" href="http://www.web2py.com/"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/pro/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Make Notes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/pro/default/makenotes</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Display Notes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/pro/default/dispnotes</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Gautam Vepa &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app to store notes</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/index/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/home/sowmith/Downloads/softwares/web2py/applications/pro/sessions/127.0.0.1-810dfef6-17f9-4a92-b5c3-b4d4b209c8b6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>c0762cbf4baf7f9af97c051e7fcb8083</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-810dfef6-17f9-4a92-b5c3-b4d4b209c8b6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Pro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/index.html</div></td></tr></table></div>'
+tRp128
+sS'locals'
+p129
+(dp130
+S'Service'
+p131
+S"<class 'gluon.tools.Service'>"
+p132
+sS'OBJECT'
+p133
+S"<class 'gluon.html.OBJECT'>"
+p134
+sS'SQLDB'
+p135
+S"<class 'gluon.dal.DAL'>"
+p136
+sg121
+S'<Storage {}>'
+p137
+sS'LINK'
+p138
+S"<class 'gluon.html.LINK'>"
+p139
+sS'BR'
+p140
+S"<class 'gluon.html.BR'>"
+p141
+sS'local_import'
+p142
+S'<function <lambda>>'
+p143
+sS'OPTGROUP'
+p144
+S"<class 'gluon.html.OPTGROUP'>"
+p145
+sS'__package__'
+p146
+S'None'
+p147
+sS'PRE'
+p148
+S"<class 'gluon.html.PRE'>"
+p149
+sS'IS_INT_IN_RANGE'
+p150
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p151
+sS'IS_LOWER'
+p152
+S"<class 'gluon.validators.IS_LOWER'>"
+p153
+sS'IS_STRONG'
+p154
+S"<class 'gluon.validators.IS_STRONG'>"
+p155
+sS'cache'
+p156
+S'<gluon.cache.Cache object>'
+p157
+sS'IS_IN_DB'
+p158
+S"<class 'gluon.validators.IS_IN_DB'>"
+p159
+sS'TAG'
+p160
+S'<gluon.html.__TAG__ object>'
+p161
+sS'SQLField'
+p162
+S"<class 'gluon.dal.Field'>"
+p163
+sS'mail'
+p164
+S'<gluon.tools.Mail object>'
+p165
+sS'BODY'
+p166
+S"<class 'gluon.html.BODY'>"
+p167
+sS'IS_DATE_IN_RANGE'
+p168
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p169
+sS'IFRAME'
+p170
+S"<class 'gluon.html.IFRAME'>"
+p171
+sS'URL'
+p172
+S'<function URL>'
+p173
+sS'__file__'
+p174
+S"'/home/sowmith/Downloads/softwares/web2py/applications/pro/views/default/index.html'"
+p175
+sS'db'
+p176
+S'<DAL uri="sqlite://storage.sqlite">'
+p177
+sS'auth'
+p178
+S'<gluon.tools.Auth object>'
+p179
+sS'P'
+S"<class 'gluon.html.P'>"
+p180
+sS'TFOOT'
+p181
+S"<class 'gluon.html.TFOOT'>"
+p182
+sS'XHTML'
+p183
+S"<class 'gluon.html.XHTML'>"
+p184
+sS'ON'
+p185
+S'True'
+p186
+sS'OL'
+p187
+S"<class 'gluon.html.OL'>"
+p188
+sS'TEXTAREA'
+p189
+S"<class 'gluon.html.TEXTAREA'>"
+p190
+sS'MENU'
+p191
+S"<class 'gluon.html.MENU'>"
+p192
+sS'IS_IMAGE'
+p193
+S"<class 'gluon.validators.IS_IMAGE'>"
+p194
+sS'EM'
+p195
+S"<class 'gluon.html.EM'>"
+p196
+sS'CODE'
+p197
+S"<class 'gluon.html.CODE'>"
+p198
+sS'HTTP'
+p199
+S"<class 'gluon.http.HTTP'>"
+p200
+sS'HR'
+p201
+S"<class 'gluon.html.HR'>"
+p202
+sS'IS_DATETIME'
+p203
+S"<class 'gluon.validators.IS_DATETIME'>"
+p204
+sS'STYLE'
+p205
+S"<class 'gluon.html.STYLE'>"
+p206
+sS'LABEL'
+p207
+S"<class 'gluon.html.LABEL'>"
+p208
+sS'CLEANUP'
+p209
+S"<class 'gluon.validators.CLEANUP'>"
+p210
+sS'plugins'
+p211
+S'<gluon.tools.PluginManager object>'
+p212
+sS'SELECT'
+p213
+S"<class 'gluon.html.SELECT'>"
+p214
+sS'use_janrain'
+p215
+S'<function use_janrain>'
+p216
+sS'CENTER'
+p217
+S"<class 'gluon.html.CENTER'>"
+p218
+sS'prettydate'
+p219
+S'<function prettydate>'
+p220
+sS'Crud'
+p221
+S"<class 'gluon.tools.Crud'>"
+p222
+sS'Auth'
+p223
+S"<class 'gluon.tools.Auth'>"
+p224
+sS'DEVELOPMENT_MENU'
+p225
+S'False'
+p226
+sS'__builtins__'
+p227
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p228
+sS'HTML'
+p229
+S"<class 'gluon.html.HTML'>"
+p230
+sS'SQLFORM'
+p231
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p232
+sS'LOAD'
+p233
+S'<function LOAD>'
+p234
+sS'redirect'
+p235
+S'<function redirect>'
+p236
+sS'FIELDSET'
+p237
+S"<class 'gluon.html.FIELDSET'>"
+p238
+sS'IS_EQUAL_TO'
+p239
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p240
+sS'embed64'
+p241
+S'<function embed64>'
+p242
+sS'IS_LIST_OF'
+p243
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p244
+sS'INPUT'
+p245
+S"<class 'gluon.html.INPUT'>"
+p246
+sS'EMBED'
+p247
+S"<class 'gluon.html.EMBED'>"
+p248
+sS'_'
+S'<function _>'
+p249
+sS'H2'
+p250
+S"<class 'gluon.html.H2'>"
+p251
+sS'H3'
+p252
+S"<class 'gluon.html.H3'>"
+p253
+sS'BUTTON'
+p254
+S"<class 'gluon.html.BUTTON'>"
+p255
+sS'H1'
+p256
+S"<class 'gluon.html.H1'>"
+p257
+sS'H6'
+p258
+S"<class 'gluon.html.H6'>"
+p259
+sS'H4'
+p260
+S"<class 'gluon.html.H4'>"
+p261
+sS'H5'
+p262
+S"<class 'gluon.html.H5'>"
+p263
+sS'UL'
+p264
+S"<class 'gluon.html.UL'>"
+p265
+sS'IS_UPPER'
+p266
+S"<class 'gluon.validators.IS_UPPER'>"
+p267
+sS'xmlescape'
+p268
+S'<function xmlescape>'
+p269
+sS'IS_TIME'
+p270
+S"<class 'gluon.validators.IS_TIME'>"
+p271
+sS'OPTION'
+p272
+S"<class 'gluon.html.OPTION'>"
+p273
+sS'TITLE'
+p274
+S"<class 'gluon.html.TITLE'>"
+p275
+sS'CRYPT'
+p276
+S"<class 'gluon.validators.CRYPT'>"
+p277
+sS'IS_EMPTY_OR'
+p278
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p279
+sS'MARKMIN'
+p280
+S"<class 'gluon.html.MARKMIN'>"
+p281
+sS'__name__'
+p282
+S"'__restricted__'"
+p283
+sS'message'
+p284
+S"<lazyT ''>"
+p285
+sS'STRONG'
+p286
+S"<class 'gluon.html.STRONG'>"
+p287
+sS'COL'
+p288
+S"<class 'gluon.html.COL'>"
+p289
+sS'service'
+p290
+S'<gluon.tools.Service object>'
+p291
+sS'SCRIPT'
+p292
+S"<class 'gluon.html.SCRIPT'>"
+p293
+sS'TABLE'
+p294
+S"<class 'gluon.html.TABLE'>"
+p295
+sS'IS_IPV4'
+p296
+S"<class 'gluon.validators.IS_IPV4'>"
+p297
+sS'IS_LENGTH'
+p298
+S"<class 'gluon.validators.IS_LENGTH'>"
+p299
+sS'IS_IPV6'
+p300
+S"<class 'gluon.validators.IS_IPV6'>"
+p301
+sS'XML'
+p302
+S"<class 'gluon.html.XML'>"
+p303
+sS'B'
+S"<class 'gluon.html.B'>"
+p304
+sS'IMG'
+p305
+S"<class 'gluon.html.IMG'>"
+p306
+sS'SQLTABLE'
+p307
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p308
+sS'IS_MATCH'
+p309
+S"<class 'gluon.validators.IS_MATCH'>"
+p310
+sS'IS_ALPHANUMERIC'
+p311
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p312
+sS'SPAN'
+p313
+S"<class 'gluon.html.SPAN'>"
+p314
+sS'IS_JSON'
+p315
+S"<class 'gluon.validators.IS_JSON'>"
+p316
+sS'IS_IPADDRESS'
+p317
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p318
+sS'IS_SLUG'
+p319
+S"<class 'gluon.validators.IS_SLUG'>"
+p320
+sS'BEAUTIFY'
+p321
+S"<class 'gluon.html.BEAUTIFY'>"
+p322
+sS'META'
+p323
+S"<class 'gluon.html.META'>"
+p324
+sS'IS_DATE'
+p325
+S"<class 'gluon.validators.IS_DATE'>"
+p326
+sS'IS_EMAIL'
+p327
+S"<class 'gluon.validators.IS_EMAIL'>"
+p328
+sS'IS_NOT_EMPTY'
+p329
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p330
+sS'IS_FLOAT_IN_RANGE'
+p331
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p332
+sS'TBODY'
+p333
+S"<class 'gluon.html.TBODY'>"
+p334
+sS'CAT'
+p335
+S"<class 'gluon.html.CAT'>"
+p336
+sS'Field'
+p337
+S"<class 'gluon.dal.Field'>"
+p338
+sS'IS_LIST_OF_EMAILS'
+p339
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p340
+sS'DIV'
+p341
+S"<class 'gluon.html.DIV'>"
+p342
+sS'LEGEND'
+p343
+S"<class 'gluon.html.LEGEND'>"
+p344
+sS'COLGROUP'
+p345
+S"<class 'gluon.html.COLGROUP'>"
+p346
+sS'DAL'
+p347
+S"<class 'gluon.dal.DAL'>"
+p348
+sS'ASSIGNJS'
+p349
+S'<function ASSIGNJS>'
+p350
+sS'TR'
+p351
+S"<class 'gluon.html.TR'>"
+p352
+sS'LI'
+p353
+S"<class 'gluon.html.LI'>"
+p354
+sS'TH'
+p355
+S"<class 'gluon.html.TH'>"
+p356
+sS'TD'
+p357
+S"<class 'gluon.html.TD'>"
+p358
+sS'PluginManager'
+p359
+S"<class 'gluon.tools.PluginManager'>"
+p360
+sS'IS_URL'
+p361
+S"<class 'gluon.validators.IS_URL'>"
+p362
+sS'A'
+S"<class 'gluon.html.A'>"
+p363
+sS'HEAD'
+p364
+S"<class 'gluon.html.HEAD'>"
+p365
+sS'IS_DATETIME_IN_RANGE'
+p366
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p367
+sS'FORM'
+p368
+S"<class 'gluon.html.FORM'>"
+p369
+sS'I'
+S"<class 'gluon.html.I'>"
+p370
+sS'crud'
+p371
+S'<gluon.tools.Crud object>'
+p372
+sS'IS_NOT_IN_DB'
+p373
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p374
+sg127
+S"<Storage {'body': <cStringIO.StringO object at 0...t 0x7fad4c0d0488>, 'view': 'default/index.html'}>"
+p375
+sS'THEAD'
+p376
+S"<class 'gluon.html.THEAD'>"
+p377
+sS'ANY_OF'
+p378
+S"<class 'gluon.validators.ANY_OF'>"
+p379
+sS'IS_NULL_OR'
+p380
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p381
+sg56
+S"<Storage {'_vars': None, 'function': 'index', 'c...h/Downloads/softwares/web2py/applications/pro/'}>"
+p382
+sS'IS_EXPR'
+p383
+S"<class 'gluon.validators.IS_EXPR'>"
+p384
+sS'T'
+S'<gluon.languages.translator object>'
+p385
+sS'IS_IN_SET'
+p386
+S"<class 'gluon.validators.IS_IN_SET'>"
+p387
+sS'IS_UPLOAD_FILENAME'
+p388
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p389
+sS'TT'
+p390
+S"<class 'gluon.html.TT'>"
+p391
+sS'IS_DECIMAL_IN_RANGE'
+p392
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p393
+sssS'traceback'
+p394
+S'Traceback (most recent call last):\n  File "/home/sowmith/Downloads/softwares/web2py/gluon/restricted.py", line 224, in restricted\n    exec ccode in environment\n  File "/home/sowmith/Downloads/softwares/web2py/applications/pro/views/default/index.html", line 18, in <module>\nNameError: name \'pro\' is not defined\n'
+p395
+s.

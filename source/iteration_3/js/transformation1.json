@@ -1,0 +1,14 @@
+CSV : {
+	"stepname":"Hello",
+	"Filename":"input.csv",
+	"Delimiter":",",
+	"Enclosure":"",
+	"NIO Buffer size":1000,
+	"Lazy conversion?":true,
+	"Header row present?":true,
+	"Add filename to result":true,
+	"The row number field name (optional)":"",
+	"Running in parallel?":false,
+	"New line possible in fields?":true,
+	"File encoding":"utf-32",
+}

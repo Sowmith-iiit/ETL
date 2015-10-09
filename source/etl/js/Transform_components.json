@@ -1,0 +1,338 @@
+
+1=input
+0=checkbox
+5=Password
+3=subdivison in a window
+4=window
+2=glow only when above is ticked and input
+8=unglow when above is ticked and input
+6=dropbox
+7=button
+9=input and checkbox
+10=glow only when above is ticked and checkbox
+11=glow only when above is ticked and password
+12=glow only when above is ticked and dropbox
+13=unglow when above is ticked and button
+
+
+
+Add checksum = { 
+    "Step name":1,
+    "Type":6,
+    "Result Type":6,
+    "Result Field":1,
+    "Compatibility":0,
+ }
+
+ Add constant = {
+ 	"Step name":1,
+ }
+
+ Add Sequence = {
+ 	"Step Name":1,
+ 	"Name Of Value":1,
+ 	"Use a Database to generate the Sequence": 3,
+ 	"Use DB to get sequence?":0,
+ 	"Connection":12,
+ 	"Edit...":7,
+ 	"New...":7,
+ 	"Wizard...":7,
+ 	"Schema Name":1,
+ 	"Schemas...":7,
+ 	"Sequence Name":1,
+ 	"Sequences":7,
+ 	"Use counter to calculate sequence?":0,
+ 	"Counter Name(optional)":8,
+ 	"Start a value":8,
+ 	"Increment By":8,
+ 	"Maximum Value":8,
+ }
+
+Add value fields changing Sequence = {
+	"Step Name":1,
+	"Result Field":1,
+	"Start at value":1,
+	"Increment By":1,
+}
+
+Add XML = {
+	"Step Name":1,
+	"Content":4,
+	"Encoding":6,
+	"Output Value":6,
+	"Root XML element":6,
+	"Omit XML header":0,
+	"Omit null values from XML result":0,
+	"Fields":4,
+	"Get Fields":7,
+	"Minimal width":7,
+}
+
+Calculator = {
+	"Step Name":1,
+}
+
+Closure Generator = {
+	"Step Name":1,
+	"Parent ID field":6,
+	"Child ID field":6,
+	"Distance field Name":1,
+	"Root is zero(Integer)?":0,
+}
+
+Concat Fields = {
+	"Step Name":1,
+	"Target Field Name":1,
+	"Length of Target Field":1,
+	"Separator":1,
+	"Insert_TAB":7,
+	"Enclosure":1,
+	"Fields":4,
+	"Get Fields":7,
+	"Minimal Width":7,
+	"Advanced":4,
+	"Remove Selected fields?":0,
+	"Force the enclosure around fields?":0,
+	"Disable the enclosure fix?":0,
+	"Header":0,
+	"Footer":0,
+	"Encoding":6,
+	"Right Pad fields":0,
+	"Fast data dump(no formatting)":0,
+	"split every...rows":1,
+	"Add Ending line after last row":1,
+}
+
+Example plugin = {
+	"Step name":1,
+	"Value name":1,
+	"Value to add":1,
+	"Edit":7,
+}
+
+Get ID from slave server = {
+	"Step name":1,
+	"Name of value":1,
+	"Slave server":6,
+	"Sequence name":1,
+	"Increment or batch":1,	
+}
+
+Number range = {
+	"Step name":1,
+	"Input field":6,
+	"Output field":1,
+	"Default Value(if no range matches)":1,
+}
+
+Replace in string = {
+	"Step name":1,
+}
+
+Row Denormaliser = {
+	"Step name":1,
+	"The key field":6,
+	"Get Fields":7,
+	"Get Lookup fields":7,
+}
+
+Row flattener = {
+	"Step name":1,
+	"The field to":6,
+}
+
+Row Normaliser = {
+	"Step name":1,
+	"Type field":1,
+	"Fields":3
+}
+
+Select values = {
+	"Step name":1,
+	"Select & Alter":4,
+	"Get fields to select":7,
+	"Edit Mapping":7,
+	"Include unspecified fields(ordered by name)":0,
+	"Remove":4,
+	"Get fields to remove":7,
+	"Meta-data":4,
+	"Get fields to change":7,
+}
+
+Set field value = {
+	"Step name":1,
+}
+
+Set field value to a constant = {
+	"Step name":1,
+	"Use variable in constant":0,
+}
+
+Sort rows = {
+	"Step name":1,
+	"Sort directory":1,
+	"Browse...":7,
+	"TMP-file prefix":1,
+	"Sort size(rows in memory)":1,
+	"Free memory threshold(in %)":1,
+	"Compress TMP Files?":0,
+	"Only pass unique rows?(verifies key only)":0,
+}
+
+Split field to rows = {
+	"Step name":1,
+	"Field to split":6,
+	"Delimiter":1,
+	"Delimiter is a Regular":0,
+	"New field name":1,
+	"Additional fields":3,
+	"Include rownum in output?":0,
+	"Rownum fieldname":1,
+	"Reset Rownum at each Input row?":0,
+}
+
+Split Fields = {
+	"Step name":1,
+	"Field to split":6,
+	"Delimiter":1,
+	"Enclosure":1,
+}
+
+String operations = {
+	"Step name":1,
+}
+
+String cut = {
+	"Step name":1,
+}
+
+Unique rows = {
+	"Step name":1,
+	"Settings":3,
+	"Add counter to output?":0,
+	"Counter field":2,
+	"Redirect duplicate row":0,
+	"Error description":2,
+}
+
+Unique rows(HashSet) = {
+	"Step name":1,
+	"Settings":3,
+	"Compare using stored row values?":0,
+	"Redirect duplicate row":0,
+	"Error description":2,
+}
+
+Value Mapper = {
+	"Step name":1,
+	"Fieldname to use":6,
+	"Target Field name(empty=overwrite)":1,
+	"Default upon non-matching":1,
+}
+
+XSL Transformation = {
+	"Step name":1,
+	"Settings":4,
+	"XML Field name":6,
+	"Result Fields":3,
+	"Result Fieldname":1,
+	"XSL File":3,
+	"XSL source defined in a":0,
+	"XSL Filename field":12,
+	"XSL field is a filename":10,
+	"XSL Filename":8,
+	"Browse...":13,
+	"XSLT Factory":6,
+	"Advanced":4,
+	"Get Fields":7,
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

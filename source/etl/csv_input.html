@@ -1,0 +1,26 @@
+</html>
+<body>
+<div id="Ash"></div>
+<script src="js/csv_input.json"></script>
+<script>
+var asd = "<form>";
+var temp;
+for (var i in obj_csv)
+{
+	asd += i+" : ";
+	temp=obj[i];
+	if(temp==1)
+	{
+		asd += "<input type=\"text\" />";
+	}
+	if(temp==0)
+	{
+		asd += "<input type=\"checkbox\" />";
+	}
+	asd += "<br>"	
+}
+asd += "</form>"
+document.getElementById("Ash").innerHTML = asd;
+</script>
+</body>
+</html>

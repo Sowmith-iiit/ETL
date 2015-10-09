@@ -1,0 +1,18 @@
+
+#pas {
+	width:1000px;
+	height:250px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+     }
+#di2 {
+	width:1000px;
+	height:250px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+     }
+svg
+     {
+	z-index:-5px !important;
+	position:absolute;
+     }

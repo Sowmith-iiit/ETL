@@ -1,0 +1,14 @@
+1=input
+0=checkbox
+5=Password
+3=subdivison in a window
+4=window
+2=glow only when above is ticked and input
+8=unglow when above is ticked and input
+6=dropbox
+7=button
+9=input and checkbox
+10=glow only when above is ticked and checkbox
+11=glow only when above is ticked and password
+12=glow only when above is ticked and dropbox
+13=unglow when above is ticked and button

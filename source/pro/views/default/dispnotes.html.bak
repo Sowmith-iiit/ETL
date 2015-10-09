@@ -1,0 +1,50 @@
+{{extend 'layout.html'}}
+<noscript><link rel="stylesheet" href="{{=URL('static','css/dispnotes.css')}}" type="text/css" /></noscript>
+<h1> Your Notes </h1>
+<h1>---------------------</h1>
+<ol style="list-style-type:none">
+  <li>
+    <a id="close" href="#">X</a>
+    <a href="#">
+      <h2>Title #1	</h2>
+      <p>Text Content #1</p>
+    </a>
+  </li>
+  <li>
+    <a id="close" href="#">X</a>
+    <a href="#">
+      <h2><b>Title #2</b></h2>
+      <p style="color:#606060;font-size:120%;">Tags : #Note</p>
+      <p>Text Content #2</p>
+      <p style="color:#505050;position:absolute;bottom:30px;right:20px;font-size:100%;">Edit Time </p>
+    </a>
+  </li>
+  <li>
+    <a id="close" href="#">X</a>
+    <a href="#">
+      <h2>Title #3</h2>
+      <p>Text Content #3</p>
+    </a>
+  </li>
+  <li>
+    <a id="close" href="#">X</a>
+    <a href="#">
+      <h2>Title #4</h2>
+      <p>Text Content #4</p>
+    </a>
+  </li>
+  <li>
+    <a id="close" href="#">X</a>
+    <a href="#">
+      <h2>Title #5</h2>
+      <p>Text Content #5</p>
+    </a>
+  </li>
+  <li>
+    <a id="close" href="#">X</a>
+    <a href="#">
+      <h2>Title #6</h2>
+      <p>Text Content #6</p>
+    </a>
+  </li>
+</ul>

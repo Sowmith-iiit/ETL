@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var flag=0,textmode=0;
+		/* flag controls drawing on canvas using mouse events
+		textmode controls whether it is in Text(0) or Drawing(1) mode */
+		var prevx=null ,prevy=null; /* coordinates of previous drawing point */
+		
+		function textmodechange()
+		{
+			var choice=document.getElementById("type");
+			if(choice.value=="Text")
+			{
+				document.getElementById("drawing").style.zIndex=0;
+				document.getElementById("drawing").style.opacity=1;
+				document.getElementById("textfield").style.zIndex=5;
+				document.getElementById("textfield").style.opacity=0.7;
+				textmode=0;
+			}
+			else if(choice.value=="Drawing")
+			{
+				document.getElementById("textfield").style.zIndex=0;
+				document.getElementById("textfield").style.opacity=1;
+				document.getElementById("drawing").style.zIndex=5;
+				document.getElementById("drawing").style.opacity=0.9;
+				textmode=1;
+			}
+		}
+		
+		function draw(event)
+		{
+			if(textmode==0)
+				return;
+			var val=document.getElementById("colors");
+			if(val.value=="White" && flag==1)
+			{
+				rub(event);
+			}
+			else if(flag==1)
+			{
+				var canvas = document.getElementById("drawing");
+				var ctx=canvas.getContext('2d');
+				var t=canvas.style.top;
+				var n=parseInt(t);
+				var l=canvas.style.left;
+				var m=parseInt(l);
+				var x=event.pageX-m;
+				var y=event.pageY-n;
+				ctx.strokeStyle=val.value;
+				ctx.lineWidth=5;
+				if(prevx!=null)
+				{
+					ctx.beginPath();
+					ctx.moveTo(prevx,prevy);
+					ctx.lineTo(x,y);
+					ctx.closePath();
+					ctx.stroke();
+				}
+				prevx=x;
+				prevy=y;
+			}
+		}
+		
+		/* f and g are just for changing the value of flag variable */
+		function f()
+		{
+			flag=1;
+		}
+		
+		function g()
+		{
+			flag=0;
+			prevx=prevy=null;
+		}
+		
+		function colourchange()
+		{
+			if(textmode==0)
+				return;
+			var er=document.getElementById("eraser");
+			var val=document.getElementById("colors");
+			if(val.value!="White")
+			{
+				er.checked=false;
+			}
+			else
+			{
+				er.checked=true;
+			}
+		}
+		
+		/* does the actual rubbing */
+		function rub(event)
+		{
+			if(textmode==0)
+				return;
+			var canvas = document.getElementById("drawing");
+			var ctx=canvas.getContext('2d');
+			var t=canvas.style.top;
+			var n=parseInt(t);
+			var l=canvas.style.left;
+			var m=parseInt(l);
+			var x=event.pageX-m;
+			var y=event.pageY-n;
+			ctx.fillStyle="#fff";
+			ctx.beginPath();
+			ctx.arc(x,y,20,0,2*Math.PI);
+			ctx.fill()
+			ctx.closePath();
+		}
+		
+		/* Just to change the colour to the background colour when eraser is clicked */
+		function erase(event)
+		{
+			var val=document.getElementById("colors");
+			if(val.value!="White")
+			{
+				var er=document.getElementById("eraser");
+				er.checked=true;
+				val.value="White";
+				colourchange();
+				rub(event);
+			}
+			else
+			{
+				val.value="Red";
+				colourchange();
+				draw(event);
+			}
+		}
+		
+		/*Note: When you to change the size of canvas, it is automatically cleared. So you have to redraw the image */
+		function extend()
+		{
+			var textf=document.getElementById("textfield");
+			var canvas=document.getElementById("drawing");
+			var n=parseInt(textf.style.height);
+			var m=parseInt(textf.style.top);
+			n+=50;
+			textf.style.height=n+"px";
+			var ctx=canvas.getContext('2d');
+			var oldcanvas=canvas.toDataURL("image/png");
+			var img=new Image();
+			img.src=oldcanvas;
+			img.onload=function()
+			{
+				canvas.height=n;
+				ctx.drawImage(img,0,0);
+			}
+			var para=document.getElementById("extra");
+			para.style.top=n+m+"px";
+		}
+        
+        /* To get an editable canvas element with previous content already draw */
+       /* function edit()
+        {
+         	var ctx=canvas.getContext('2d');
+            var oldcanvas={{=session.canvas_image}};
+			var img=new Image();
+			img.src=oldcanvas;
+			img.onload=function()
+			{
+                canvas.height={{=session.canvas_height}};
+				ctx.drawImage(img,0,0);
+			}
+        }*/
+        
+        function save()
+        {
+            var canvas=document.getElementById("drawing");
+            document.getElementById("h").value=canvas.height;
+			var oldcanvas=canvas.toDataURL("image/png");
+            var image=document.getElementById("data");
+            image.value=oldcanvas;
+            console.log(oldcanvas);
+        }
+	</script>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+		<select id="colors" onchange="colourchange()">
+		<option>Red</option>
+		<option>Blue</option>
+		<option>Green</option>
+		<option>Black</option>
+		<option>Gray</option>
+		<option>Yellow</option>
+		<option>Orange</option>
+		<option>Silver</option>
+		<option>Purple</option>
+		<option>Aqua</option>
+		<option>Fuchsia</option>
+		<option>Lime</option>
+		<option>Maroon</option>
+		<option>Navy</option>
+		<option>Olive</option>
+		<option>Teal</option>
+		<option>White</option>
+		</select>
+		<input id="eraser" type="checkbox" onchange="erase(event)" /> ERASER
+		<select id="type" onchange="textmodechange()">
+		<option>Text</option>
+		<option>Drawing</option>
+		</select>
+		<!-- Title : <input type="text" name="Title" /><br>
+		Tags : <input type="text" name="Tags" /><br> -->
+        <input type="submit" name="sub" value="SAVE" onmouseover="save();" />
+		Text : <textarea onscroll="extend();" id="textfield" name="Text" style="position:absolute; top:100px; width:1200px; height:500px; left:30px; z-index:5; opacity:0.9;">Sample Text</textarea>
+		<canvas style="position:absolute; top:100px; z-index:0; left:30px; opacity:1;" id="drawing" height="500" width="1200"
+		onmousemove="draw(event)" onmousedown="f()" onmouseup="g()">
+		</canvas>
+        <input id="data" type="text" name="canvas_image" style="display:none;" />
+        <input id="h" type="text" name="canvas_height" style="display:none;" />
+	</form>
+	
+	<!-- This paragraph is for the extra space at the bottom of the page -->
+	<p id="extra" style="position:absolute; top:600px;">&nbsp<br><br><br></p>
+</body>
+</html>

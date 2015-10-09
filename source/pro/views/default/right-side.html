@@ -1,0 +1,44 @@
+
+ <aside class="right-side">
+<section class="content-header">
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                 <!--pre id="pas" ondrop="drop(event) ondragover="allowdrop(event)"></pre-->
+                 <div id="pas" ondrop="dropcopy(event)" ondragover="allowDrop(event)">
+          <!-- /.content -->
+              </div>
+            </section>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        <table>
+                <tr><td>StepName:</td> <td><input type="text" class="form-control"></td></tr>
+                <tr><td> FileName:</td><td><input type="text" class="form-control" required> <input type="file" > </td></tr>
+                <tr><td>Delimiter:</td><td> <input type="text" placeholder="," class="form-control" required></td></tr> 
+                <tr><td>Enclosure:</td><td><input type="text" placeholder='"' required></td></tr>
+                <tr><td>NIO Buffer_size </td><td><input type="text" placeholder="5000" required></td></tr>
+                <tr><td>lazy conversion </td><td><input type="checkbox" required></td></tr>
+                <tr><td>Header_row present </td><td><input type="checkbox"></td></tr>
+                <tr><td>Add filename to result </td><td><input type="checkbox"></td></tr>
+                <tr><td>row number(optional) </td><td><input type="text"></td></tr>
+                <tr><td>Running in parallel ? </td><td><input type="checkbox"></td></tr>
+                <tr><td>New line possible </td><td><input type="checkbox"></td></tr>
+                <tr><td>File Encoding </td><td><input type="text"></td></tr>
+        </table>
+        </forn>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+</aside>
